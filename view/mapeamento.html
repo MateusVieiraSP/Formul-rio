@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapeamento de Processos</title>
+    <link rel="stylesheet" href="../styles/mapeamento.css">
+</head>
+<body>
+    <main id="form-section">
+        <div id="form-container">
+            <h1>Mapeamento de Processos</h1>
+            <div id="edit-indicator" style="display: none; margin-bottom: 10px;"></div>
+            <form id="processForm">
+                <div class="question">
+                    <label for="etapa">7. Nome da etapa *</label>
+                    <input type="text" id="etapa" name="etapa" required placeholder="Insira sua resposta">
+                </div>
+                <div class="question">
+                    <label for="objetivo">8. Objetivo da etapa, da subetapa ou da subetapa *</label>
+                    <input type="text" id="objetivo" name="objetivo" required placeholder="Insira sua resposta">
+                </div>
+                <div class="question" id="divRecursosHumanos">
+                    <label id="pergunta9Label" for="recursos">9. Recursos humanos utilizados nesta etapa, subetapa ou subetapa da subetapa</label>
+                    <p id="pergunta9Texto">Agentes públicos envolvidos em cada etapa ou subetapa do processo.</p>
+                    <div class="input-button-container">
+                        <input list="recursosHumanos" id="inputRecursosHumanos" class="input-recursos" placeholder="Clique para selecionar..." onclick="this.value=''">
+                        <button type="button" class="btn-remover" id="btnAdicionarOpcao">Adicionar</button>
+                    </div>
+                    <datalist id="recursosHumanos">
+                        <option value="Agente administrativo"></option>
+                        <option value="Agente comunitário e de endemias"></option>
+                        <option value="Agente de saúde"></option>
+                        <option value="Agrônomo"></option>
+                        <option value="Analista"></option>
+                        <option value="Arquiteto"></option>
+                        <option value="Arquivista"></option>
+                        <option value="Assessor"></option>
+                        <option value="Assistente"></option>
+                        <option value="Auditor"></option>
+                        <option value="Auxiliar administrativo"></option>
+                        <option value="Chefe de assessoria"></option>
+                        <option value="Chefe de equipe"></option>
+                        <option value="Coordenador"></option>
+                        <option value="Diretor"></option>
+                        <option value="Enfermeiro"></option>
+                        <option value="Engenheiro"></option>
+                        <option value="Estagiário"></option>
+                        <option value="Fiscal de posturas municipais"></option>
+                        <option value="Geólogo"></option>
+                        <option value="Gerente de projetos"></option>
+                        <option value="Gestor de equipamento público"></option>
+                        <option value="Guarda civil metropolitano"></option>
+                        <option value="Inspetor de alunos"></option>
+                        <option value="Médico"></option>
+                        <option value="Motorista"></option>
+                        <option value="Nutricionista"></option>
+                        <option value="Policial"></option>
+                        <option value="Prefeito"></option>
+                        <option value="Procurador do município"></option>
+                        <option value="Professor"></option>
+                        <option value="Residente"></option>
+                        <option value="Secretário municipal"></option>
+                        <option value="Subprefeito"></option>
+                        <option value="Supervisor"></option>
+                    </datalist>
+                    <div id="selecoes"></div>
+                </div>
+                <div class="question">
+                    <label for="pessoais">10. Quais são os dados pessoais utilizados *</label>
+                    <p>Dado pessoal refere-se a qualquer informação relacionada a uma pessoa física identificada ou identificável. Isso inclui qualquer dado que possa ser usado, direta ou indiretamente, para identificar um indivíduo. Exemplos de dados pessoais incluem nome, endereço, número de telefone, e-mail, data de nascimento, número de CPF ou RG.</p>
+                    <p>Dado pessoal sensível é uma subcategoria de dado pessoal que envolve informações sobre aspectos mais íntimos e que, se divulgadas ou mal utilizadas, podem resultar em discriminação ou violação da privacidade do indivíduo. Exemplos de dados pessoais sensíveis incluem origem racial ou étnica, opiniões políticas, convicções religiosas ou filosóficas, filiação sindical, dados genéticos ou biométricos, dados relativos à saúde, e dados sobre a vida sexual ou orientação sexual da pessoa.</p>
+                    <input type="text" id="pessoais" name="pessoais" required placeholder="Insira sua resposta">
+                </div>
+                <div class="question" id="divRecursosFisicos">
+                    <label id="pergunta11Label" for="fisicos">11. Recursos físicos utilizados nesta etapa, subetapa ou subetapa da subetapa *</label>
+                    <p id="pergunta11Texto">Infraestrutura física utilizada em cada etapa ou subetapa de processo. Caso o recurso físico envolvido na etapa ou subetapa não conste na lista, insira na opção "outros", separando cada recurso disposto por ";".</p>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Câmera" id="fisicosCamera">
+                        <label for="fisicosCamera">Câmera</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Computador" id="fisicosComputador">
+                        <label for="fisicosComputador">Computador</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Dispositivo" id="fisicosDispositivo">
+                        <label for="fisicosDispositivo">Dispositivo de mídia removível (pen-drive, cartão de memória, disco óptico, fita magnética, HD externo, entre outros)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Impressora" id="fisicosImpressora">
+                        <label for="fisicosImpressora">Impressora</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Material biológico" id="fisicosMaterialBiologico">
+                        <label for="fisicosMaterialBiologico">Material biológico</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Mobiliário de armazenamento de documento físico" id="fisicosMobiliario">
+                        <label for="fisicosMobiliario">Mobiliário de armazenamento de documento físico</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Papel" id="fisicosPapel">
+                        <label for="fisicosPapel">Papel</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Scanner" id="fisicosScanner">
+                        <label for="fisicosScanner">Scanner</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Telefone/Celular" id="fisicosTelefone">
+                        <label for="fisicosTelefone">Telefone/Celular</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Webcam" id="fisicosWebcam">
+                        <label for="fisicosWebcam">Webcam</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="outraFisicos" id="outraFisicos">
+                        <label for="outraFisicos">Outra</label>
+                        <input type="text" name="outraFisicosInput" id="outraFisicosInput" placeholder="Insira sua resposta">
+                    </div>
+                </div>
+                <div class="question" id="divRecursosTecnologicos">
+                    <label id="pergunta12Label" for="tecnologicos">12. Recursos tecnológicos utilizados nesta etapa, subetapa ou subetapa da subetapa *</label>
+                    <p id="pergunta12Texto">Selecione os recursos de tecnologia, como softwares, utilizados para o desenvolvimento da etapa ou da subetapa. Caso o recurso tecnológico envolvido na etapa ou subetapa não conste na lista, insira na opção "outros", separando cada recurso disposto por ";".</p>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Aplicações da Adobe" id="tecnologicosAplicacoesAdobe">
+                        <label for="tecnologicosAplicacoesAdobe">Aplicações da Adobe (Acrobat Reader, Premiere Pro, Photoshop, After Effects, entre outros)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Aplicações da Google" id="tecnologicosAplicacoesGoogle">
+                        <label for="tecnologicosAplicacoesGoogle">Aplicações da Google (Gmail, Google Drive, Google Meet, entre outros)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Aplicações da Meta" id="tecnologicosAplicacoesMeta">
+                        <label for="tecnologicosAplicacoesMeta">Aplicações da Meta (WhatsApp, Facebook, Instagram, entre outros)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Diário Oficial da Cidade" id="tecnologicosDiarioOficial">
+                        <label for="tecnologicosDiarioOficial">Diário Oficial da Cidade (DOC)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Microsoft Excel" id="tecnologicosMicrosoftExcel">
+                        <label for="tecnologicosMicrosoftExcel">Microsoft Excel (ou editores de planilha similares)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Microsoft OneDrive" id="tecnologicosMicrosoftOneDrive">
+                        <label for="tecnologicosMicrosoftOneDrive">Microsoft OneDrive (ou demais aplicações em nuvem)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Microsoft Outlook" id="tecnologicosMicrosoftOutlook">
+                        <label for="tecnologicosMicrosoftOutlook">Microsoft Outlook (ou provedores de e-mail similares)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Microsoft Power BI" id="tecnologicosMicrosoftPowerBI">
+                        <label for="tecnologicosMicrosoftPowerBI">Microsoft Power BI (ou visualizadores estruturadores de dados similares)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Microsoft PowerPoint" id="tecnologicosMicrosoftPowerPoint">
+                        <label for="tecnologicosMicrosoftPowerPoint">Microsoft PowerPoint (ou editores de apresentação similares)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Microsoft Teams" id="tecnologicosMicrosoftTeams">
+                        <label for="tecnologicosMicrosoftTeams">Microsoft Teams (ou canais de comunicação similares)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Microsoft Word" id="tecnologicosMicrosoftWord">
+                        <label for="tecnologicosMicrosoftWord">Microsoft Word (ou editores de texto similares)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Sistema Eletrônico de Informações (SEI!)" id="tecnologicosSEI">
+                        <label for="tecnologicosSEI">Sistema Eletrônico de Informações (SEI!)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Sistema Eletrônico de Informação ao Cidadão" id="tecnologicosESic">
+                        <label for="tecnologicosESic">Sistema Eletrônico de Informação ao Cidadão (e-Sic)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Sistema Integrado de Gestão do Relacionamento com o Cidadão" id="tecnologicosSIGRC">
+                        <label for="tecnologicosSIGRC">Sistema Integrado de Gestão do Relacionamento com o Cidadão (SIGRC)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Sistema de Orçamento e Finanças" id="tecnologicosSOF">
+                        <label for="tecnologicosSOF">Sistema de Orçamento e Finanças (SOF)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Sistema de Registro de Bens dos Agentes Públicos" id="tecnologicosSISPATRI">
+                        <label for="tecnologicosSISPATRI">Sistema de Registro de Bens dos Agentes Públicos (SISPATRI)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Sistema Integrado para Gestão de Suprimentos e Serviços" id="tecnologicosSIGSS">
+                        <label for="tecnologicosSIGSS">Sistema Integrado para Gestão de Suprimentos e Serviços (SIGSS)</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="Waran" id="tecnologicosWaran">
+                        <label for="tecnologicosWaran">Waran</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="outraTecnologicos" id="outraTecnologicos">
+                        <label for="outraTecnologicos">outra</label>
+                        <input type="text" name="outraTecnologicosInput" id="outraTecnologicosInput" placeholder="Insira sua resposta">
+                    </div>
+                </div>
+                <div class="question">
+                    <label id="pergunta13Label" for="comunicacao">13. Comunicação e compartilhamento das informações</label>
+                    <p id="pergunta13Texto">Descreva como são realizadas as atividades/tarefas de interação entre os agentes públicos (entende-se como agentes públicos, para os efeitos deste formulário, os cargos/funções e não os nomes dos agentes) nessa etapa ou subetapa do processo e como é efetuado o compartilhamento de informações e de documentos entre as etapas ou subetapas anteriores e posteriores a esta (Quem faz? O que faz? Como faz? Por onde faz? Por que faz? Se envia, para quem envia e como envia?).</p>
+                    <input type="text" id="comunicacao" name="comunicacao" placeholder="Insira sua resposta">
+                </div>
+                <div class="question">
+                    <label id="pergunta14Label" for="taxonomia">14. Taxonomia dos recursos informacionais (informações geradas)</label>
+                    <p id="pergunta14Texto">Informação é o conhecimento que pode ser documentado. Neste caso, diz respeito ao objeto/assunto das informações que são geradas ou compartilhadas. Necessariamente, serão geradas informações em todas as etapas ou subetapas.</p>
+                    <input type="text" name="taxonomia" id="taxonomia" placeholder="Insira sua resposta">
+                </div>
+                <div class="question">
+                    <label for="informacionais">15. Taxonomia dos recursos informacionais (documentos gerados)</label>
+                    <p>Documento é o suporte em que uma informação gerada ou compartilhada é representada a partir de diferentes expressões da percepção humana, como a escrita, a imagem, o áudio e o vídeo. Não necessariamente serão gerados documentos em todas as etapas. Caso não haja, insira "Não se aplica".</p>
+                    <input type="text" name="informacionais" id="informacionais" placeholder="Insira sua resposta">                  
+                </div>
+                <div class="button-container">
+                    <button type="button" id="createEtapaButton" onclick="addEtapa()">Criar Etapa</button>
+                    <button type="button" id="createSubetapaButton" onclick="addSubetapa()">Criar Subetapa</button>
+                    <button type="button" id="encerrarFormularioButton" onclick="encerrarFormulario()">Encerrar Formulário</button>
+                    <button type="button" id="saveChangesButton" onclick="saveChanges()" style="display: none;">Salvar Alteração</button>
+                    <button type="button" id="cancelChangesButton" onclick="cancelChanges()" style="display: none;">Cancelar</button>
+                </div>
+            </form>
+        </div>
+        <div id="feedback"></div>
+    </main>
+    <script src="../js/mapeamento.js"></script>
+    <script src="../js/export.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</body>
+</html>

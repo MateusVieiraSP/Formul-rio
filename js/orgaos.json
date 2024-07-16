@@ -1,0 +1,372 @@
+{
+    "Agência Reguladora de Serviços Públicos do Município de São Paulo": {
+        "sigla": "SP Regula",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Autarquia"
+    },
+    "Agência São Paulo de Desenvolvimento": {
+        "sigla": "ADESAMPA",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "Companhia de Engenharia e Tráfego": {
+        "sigla": "CET",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "Companhia Metropolitana de Habitação de São Paulo": {
+        "sigla": "COHAB-SP",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "Companhia São Paulo de Desenvolvimento e Mobilização de Ativos": {
+        "sigla": "SPDA",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "Controladoria Geral do Município": {
+        "sigla": "CGM",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Empresa de Cinema e Audiovisual de São Paulo": {
+        "sigla": "SP Cine",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "Empresa de Tecnologia da Informação e Comunicação do Município de São Paulo": {
+        "sigla": "PRODAM",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "Fundação Paulistana de Educação, Tecnologia e Cultura": {
+        "sigla": "Fundação Paulistana",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Fundação"
+    },
+    "Hospital do Servidor Público Municipal": {
+        "sigla": "HSPM",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Autarquia"
+    },
+    "Instituto de Previdência Municipal": {
+        "sigla": "IPREM",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Autarquia"
+    },
+    "Procuradoria Geral do Município": {
+        "sigla": "PGM",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "São Paulo Negócios": {
+        "sigla": "SP Negócios",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "São Paulo Obras": {
+        "sigla": "SP Obras",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "São Paulo Parcerias": {
+        "sigla": "SP Parcerias",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "São Paulo Transporte": {
+        "sigla": "SPTrans",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "São Paulo Turismo": {
+        "sigla": "SPTuris",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "São Paulo Urbanismo": {
+        "sigla": "SP Urbanismo",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Empresa"
+    },
+    "Secretaria do Governo Municipal": {
+        "sigla": "SGM",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal da Casa Civil": {
+        "sigla": "SMCC",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal da Fazenda": {
+        "sigla": "SF",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal da Pessoa com Deficiência": {
+        "sigla": "SMPED",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal da Saúde": {
+        "sigla": "SMS",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal das Subprefeituras": {
+        "sigla": "SMSUB",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Assistência e Desenvolvimento Social": {
+        "sigla": "SMADS",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Cultura": {
+        "sigla": "SMC",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Desenvolvimento Econômico e Trabalho": {
+        "sigla": "SMDET",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Direitos Humanos e Cidadania": {
+        "sigla": "SMDHC",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Educação": {
+        "sigla": "SME",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Esportes e Lazer": {
+        "sigla": "SEME",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Gestão": {
+        "sigla": "SEGES",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Habitação": {
+        "sigla": "SEHAB",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Infraestrutura Urbana e Obras": {
+        "sigla": "SIURB",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Inovação e Tecnologia": {
+        "sigla": "SMIT",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Justiça": {
+        "sigla": "SMJ",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Mobilidade e Trânsito": {
+        "sigla": "SMT",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Relações Internacionais": {
+        "sigla": "SMRI",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Segurança Urbana": {
+        "sigla": "SMSU",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Turismo ": {
+        "sigla": "SMTUR",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal de Urbanismo e Licenciamento": {
+        "sigla": "SMUL",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Secretaria Municipal do Verde e do Meio Ambiente": {
+        "sigla": "SVMA",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Secretaria"
+    },
+    "Serviço Funerário do Município de São Paulo": {
+        "sigla": "SFMSP",
+        "categoria": "Adm. Indireta",
+        "subcategoria": "Autarquia"
+    },
+    "Subprefeitura Aricanduva/Vila Formosa/Carrão": {
+        "sigla": "SUB-AF",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Butantã": {
+        "sigla": "SUB-BT",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Campo Limpo": {
+        "sigla": "SUB-CL",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Capela do Socorro": {
+        "sigla": "SUB-CS",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Casa Verde/Cachoeirinha": {
+        "sigla": "SUB-CV",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Cidade Ademar": {
+        "sigla": "SUB-AD",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Cidade Tiradentes": {
+        "sigla": "SUB-CT",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Ermelino Matarazzo": {
+        "sigla": "SUB-EM",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Freguesia do Ó/Brasilândia": {
+        "sigla": "SUB-FB",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Guaianases": {
+        "sigla": "SUB-G",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Ipiranga": {
+        "sigla": "SUB-IP",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Itaim Paulista": {
+        "sigla": "SUB-IT",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Itaquera": {
+        "sigla": "SUB-IQ",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Jabaquara": {
+        "sigla": "SUB-JA",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Jaçanã/Tremembé": {
+        "sigla": "SUB-JT",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Lapa": {
+        "sigla": "SUB-LA",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura M´Boi Mirim": {
+        "sigla": "SUB-MB",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Mooca": {
+        "sigla": "SUB-MO",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Parelheiros": {
+        "sigla": "SUB-PA",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Penha": {
+        "sigla": "SUB-PE",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Perus/Anhanguera": {
+        "sigla": "SUB-PR",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Pinheiros": {
+        "sigla": "SUB-PI",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Pirituba/Jaraguá": {
+        "sigla": "SUB-PJ",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Santana/Tucuruvi": {
+        "sigla": "SUB-ST",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Santo Amaro": {
+        "sigla": "SUB-SA",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura São Mateus": {
+        "sigla": "SUB-SM",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura São Miguel Paulista": {
+        "sigla": "SUB-MP",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Sapopemba": {
+        "sigla": "SUB-SP",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Sé": {
+        "sigla": "SUB-SE",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Vila Maria/Vila Guilherme": {
+        "sigla": "SUB-MG",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Vila Mariana": {
+        "sigla": "SUB-VM",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    },
+    "Subprefeitura Vila Prudente": {
+        "sigla": "SUB-VP",
+        "categoria": "Adm. Direta",
+        "subcategoria": "Subprefeitura"
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indentificação</title>
+    <link rel="stylesheet" href="../styles/identificaçao.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+<head>
+<body>
+    <div class="form-container">
+        <form id="formularioProcesso">
+            <h1><i class="fas fa-scroll"></i>Formulário de Mapeamento de Processos</h1>
+            <legend>Informações do Processo</legend>
+
+            <div class="question">
+                <label for="responsavel">Nome do Responsável pelo Preenchimento </label>
+                <input type="text" id="responsavel" name="responsavel" placeholder="Insira sua resposta" required>
+            </div>
+
+            <div class="question">
+                <label for="superior">Nome do Superior Hierárquico </label>
+                <input type="text" id="superior" name="superior" placeholder="Insira sua resposta" required>
+            </div>
+
+            <div class="question">
+                <label for="orgao">Nome do Órgão ou da Entidade </label>
+                <p class="paragrafo">Insira o nome da Secretaria, Subprefeitura, Autarquia, Empresa Pública ou Fundação à qual este processo está relacionado.</p>
+                <input type="text" list="orgaos" id="orgao" name="orgao" placeholder="Insira sua resposta" required>
+                <datalist id="orgaos">
+                    <!-- Os órgãos serão inseridos aqui dinamicamente -->
+                    <option value="Agência Reguladora de Serviços Públicos do Município de São Paulo"></option>
+                    <option value="Agência São Paulo de Desenvolvimento"></option>
+                    <option value="Companhia de Engenharia e Tráfego"></option>
+                    <option value="Companhia Metropolitana de Habitação de São Paulo"></option>
+                    <option value="Companhia São Paulo de Desenvolvimento e Mobilização de Ativos"></option>
+                    <option value="Controladoria Geral do Município"></option>
+                    <option value="Empresa de Cinema e Audiovisual de São Paulo"></option>
+                    <option value="Empresa de Tecnologia da Informação e Comunicação do Município de São Paulo"></option>
+                    <option value="Fundação Paulistana de Educação, Tecnologia e Cultura"></option>
+                    <option value="Fundação Paulistana de Educação, Tecnologia e Cultura"></option>
+                    <option value="Hospital do Servidor Público Municipal"></option>
+                    <option value="Instituto de Previdência Municipal"></option>
+                    <option value="Procuradoria Geral do Município"></option>
+                    <option value="São Paulo Negócios"></option>
+                    <option value="São Paulo Obras"></option>
+                    <option value="São Paulo Parcerias"></option>
+                    <option value="São Paulo Transporte"></option>
+                    <option value="São Paulo Turismo"></option>
+                    <option value="São Paulo Urbanismo"></option>
+                    <option value="Secretaria do Governo Municipal"></option>
+                    <option value="Secretaria Municipal da Casa Civil"></option>
+                    <option value="Secretaria Municipal da Fazenda"></option>
+                    <option value="Secretaria Municipal da Pessoa com Deficiência"></option>
+                    <option value="Secretaria Municipal da Saúde"></option>
+                    <option value="Secretaria Municipal das Subprefeituras"></option>
+                    <option value="Secretaria Municipal de Assistência e Desenvolvimento Social"></option>
+                    <option value="Secretaria Municipal de Cultura"></option>
+                    <option value="Secretaria Municipal de Desenvolvimento Econômico e Trabalho"></option>
+                    <option value="Secretaria Municipal de Direitos Humanos e Cidadania"></option>
+                    <option value="Secretaria Municipal de Educação"></option>
+                    <option value="Secretaria Municipal de Esportes e Lazer"></option>
+                    <option value="Secretaria Municipal de Gestão"></option>
+                    <option value="Secretaria Municipal de Habitação"></option>
+                    <option value="Secretaria Municipal de Infraestrutura Urbana e Obras"></option>
+                    <option value="Secretaria Municipal de Inovação e Tecnologia"></option>
+                    <option value="Secretaria Municipal de Justiça"></option>
+                    <option value="Secretaria Municipal de Mobilidade e Trânsito"></option>
+                    <option value="Secretaria Municipal de Relações Internacionais"></option>
+                    <option value="Secretaria Municipal de Segurança Urbana"></option>
+                    <option value="Secretaria Municipal de Turismo "></option>
+                    <option value="Secretaria Municipal de Urbanismo e Licenciamento"></option>
+                    <option value="Secretaria Municipal do Verde e do Meio Ambiente"></option>
+                    <option value="Serviço Funerário do Município de São Paulo"></option>
+                    <option value="Subprefeitura Aricanduva/Vila Formosa/Carrão"></option>
+                    <option value="Subprefeitura Butantã"></option>
+                    <option value="Subprefeitura Campo Limpo"></option>
+                    <option value="Subprefeitura Capela do Socorro"></option>
+                    <option value="Subprefeitura Casa Verde/Cachoeirinha"></option>
+                    <option value="Subprefeitura Cidade Ademar"></option>
+                    <option value="Subprefeitura Cidade Tiradentes"></option>
+                    <option value="Subprefeitura Ermelino Matarazzo"></option>
+                    <option value="Subprefeitura Freguesia do Ó/Brasilândia"></option>
+                    <option value="Subprefeitura Guaianases"></option>
+                    <option value="Subprefeitura Ipiranga"></option>
+                    <option value="Subprefeitura Itaim Paulista"></option>
+                    <option value="Subprefeitura Itaquera"></option>
+                    <option value="Subprefeitura Jabaquara"></option>
+                    <option value="Subprefeitura Jaçanã/Tremembé"></option>
+                    <option value="Subprefeitura Lapa"></option>
+                    <option value="Subprefeitura M´Boi Mirim"></option>
+                    <option value="Subprefeitura Mooca"></option>
+                    <option value="Subprefeitura Parelheiros"></option>
+                    <option value="Subprefeitura Penha"></option>
+                    <option value="Subprefeitura Perus/Anhanguera"></option>
+                    <option value="Subprefeitura Pinheiros"></option>
+                    <option value="Subprefeitura Pirituba/Jaraguá"></option>
+                    <option value="Subprefeitura Santana/Tucuruvi"></option>
+                    <option value="Subprefeitura Santo Amaro"></option>
+                    <option value="Subprefeitura São Mateus"></option>
+                    <option value="Subprefeitura São Miguel Paulista"></option>
+                    <option value="Subprefeitura Sapopemba"></option>
+                    <option value="Subprefeitura Sé"></option>
+                    <option value="Subprefeitura Vila Maria/Vila Guilherme"></option>
+                    <option value="Subprefeitura Vila Mariana"></option>
+                    <option value="Subprefeitura Vila Prudente"></option>
+                </datalist>
+            </div>
+            
+            <div id="camposAdicionais" style="display: none;">
+                <div class="question">
+                    <label for="sigla">Sigla:</label>
+                    <input type="text" class="resposta-input" id="sigla" readonly>
+                </div>
+
+                <div class="question">
+                    <label for="subcategoria">Subcategoria:</label>
+                    <input type="text" class="resposta-input" id="subcategoria" readonly>
+                </div>
+
+                <div class="question">
+                    <label for="categoria">Categoria:</label>
+                    <input type="text" class="resposta-input" id="categoria" readonly>
+                </div>
+            </div>
+            
+            <div class="question">
+                <label for="setor">Nome do Setor </label>
+                <p>Insira o(s) nome(s) da(s) coordenadoria(s), divisão(ões) ou diretoria(s) à(s) qual(is) este(s) processo(s) está(ão) relacionado(s).</p>
+                <input type="text" id="setor" name="setor" placeholder="Insira sua resposta" required>
+            </div>
+
+            <div class="question">
+                <label for="nomeProcesso">Nome do Processo </label>
+                <p>Um processo é uma atividade orientada por determinado objetivo geral e que pode ser subdividida em diversas etapas, cada qual com um objetivo específico.</p>
+                <input type="text" id="nomeProcesso" name="nomeProcesso" placeholder="Insira sua resposta" required>
+            </div>
+
+            <div class="question">
+                <label for="objetivoProcesso">Objetivo do Processo </label>
+                <p>Indicação do objetivo geral deste processo.</p>
+                <input type="text" id="objetivoProcesso" name="objetivoProcesso" placeholder="Insira sua resposta" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="button">Avançar</button>
+            </div>
+        </form>
+    </div>
+<script src="../js/identificacao.js"></script>
+</body>
+</html>

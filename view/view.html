@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/view-style.css">
+    <title>Visualizar Etapas e Subetapas</title>
+</head>
+<body>
+    <header>
+        <button onclick="goToFormPage()">Voltar ao Formulário</button>
+        <button onclick="exportToExcel()">Exportar para Excel</button>
+    </header>
+    <main>
+        <div id="tree-view">
+            <!-- Árvore de etapas/subetapas será gerada aqui -->
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+    <script src="../js/mapeamento.js"></script>
+    <script src="../js/export.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            updateTreeView();
+        });
+    </script>
+</body>
+</html>
